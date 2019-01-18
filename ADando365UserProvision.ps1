@@ -80,6 +80,8 @@ while (!(($Licence_No -ge 1) -and ($Licence_No -le $Licence_Count)) -or ($Unavai
     $Licence_No = Read-Host `n Select Licence Option Number, agian.
 }
 
+$Licence_No = $Licence_No - 1
+
 $Firstname = Read-Host -Prompt "Enter First Name"
 $Firstname = $Firstname.substring(0,1).toupper() + $FirstName.substring(1)
 
