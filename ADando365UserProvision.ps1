@@ -127,6 +127,6 @@ while (!($GetUser))
 Write-Host -ForegroundColor Green "`nThe User Account is synchronised."
 
 Set-MsolUser -UserPrincipalName $EmailAddress -UsageLocation GB
-Set-MsolUserLicense -UserPrincipalName $EmailAddress -AddLicenses $Licences[$Licence_No+1].AccountSkuId
+Set-MsolUserLicense -UserPrincipalName $EmailAddress -AddLicenses $Licences[$Licence_No].AccountSkuId
 
 Write-Host -ForegroundColor Green "`nThe User Account has been provisioned successully."
